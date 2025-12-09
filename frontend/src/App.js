@@ -14,8 +14,11 @@ const App = () => {
     chatRoomConnect();
     baseInit();
 
+    // Use placeholder client ID if not configured (prevents errors, but Google OAuth won't work)
+    const googleClientId = process.env.REACT_APP_GOOGLE_CLIENT_ID || 'placeholder-client-id';
+
     return (
-        <GoogleOAuthProvider clientId={process.env.REACT_APP_GOOGLE_CLIENT_ID}>
+        <GoogleOAuthProvider clientId={googleClientId}>
             <StyledEngineProvider injectFirst>
                 <ThemeProvider theme={themes(customization)}>
                     <CssBaseline />
@@ -26,7 +29,7 @@ const App = () => {
                 </ThemeProvider>
             </StyledEngineProvider>
         </GoogleOAuthProvider>
-    )
+    );
 };
 
 export default App;

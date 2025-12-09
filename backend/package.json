@@ -5,17 +5,17 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "dev": "nodemon server.js",
-    "admin": "nodemon admin/AdminService.js",
-    "turtle": "nodemon turtlerace/TurtleService.js",
-    "scissors": "nodemon scissors/ScissorsService.js",
-    "mines": "nodemon mines/MinesService.js",
-    "chatroom": "nodemon userchat/UserChatService.js",
-    "manage": "nodemon management/ManagementService.js",
-    "dice": "nodemon dice/DiceService.js",
-    "slot": "nodemon slot/SlotService.js",
-    "plinko": "nodemon plinko/PlinkoService.js",
-    "crash": "nodemon crash/CrashService.js"
+    "dev": "npx nodemon server.js",
+    "admin": "npx nodemon admin/AdminService.js",
+    "turtle": "npx nodemon turtlerace/TurtleService.js",
+    "scissors": "npx nodemon scissors/ScissorsService.js",
+    "mines": "npx nodemon mines/MinesService.js",
+    "chatroom": "npx nodemon userchat/UserChatService.js",
+    "manage": "npx nodemon management/ManagementService.js",
+    "dice": "npx nodemon dice/DiceService.js",
+    "slot": "npx nodemon slot/SlotService.js",
+    "plinko": "npx nodemon plinko/PlinkoService.js",
+    "crash": "npx nodemon crash/CrashService.js"
   },
   "repository": {
     "type": "git",
@@ -61,5 +61,8 @@
     "tronweb": "^5.1.0",
     "uuid": "^9.0.0",
     "web3": "^1.8.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11"
   }
 }

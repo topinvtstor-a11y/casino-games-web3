@@ -1,4 +1,4 @@
-const isLocal = false;
+const isLocal = true;
 const pro = 'https://backend.memewarsx.com';
 const dev = 'http://localhost:5000';
 const url = isLocal ? dev : pro;
